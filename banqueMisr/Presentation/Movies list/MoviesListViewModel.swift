@@ -30,7 +30,7 @@ class MoviesListViewModel: BaseViewModel {
             defer { isShimmering = false }
             movies = try await moviesUseCase.executeFetchingMovies()
         } catch {
-            print(error)
+            handleError(error)
             movies = []
         }
     }
