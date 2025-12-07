@@ -19,21 +19,7 @@ struct MovieListView: View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
                 LazyVGrid(columns: gridColumns, spacing: Helper.isIpad ? 16 : 12) {
-                    ForEach(viewModel.movies) { movie in
-                        NavigationLink(
-                            destination: MovieDetailsView(
-                                viewModel: MovieDetailsViewModel(
-                                    movieId: movie.id,
-                                    useCase: MovieDetailsUseCase(repository: MovieRepository(networkService: NetworkService(),
-                                                                                             moviesDataManager: DataController.shared,
-                                                                                             reachabilityManager: ReachabilityManager()))
-                                )
-                            )
-                        ) {
-                            MovieCardView(movie: movie)
-                                .shimmeringRedact(shouldRedact: viewModel.isShimmering)
-                        }
-                    }
+                    moviesListGrid
                 }
             }
             .padding(.horizontal)
@@ -41,8 +27,28 @@ struct MovieListView: View {
             .task {
                 await viewModel.fetchMovies()
             }
-            .errorMessage(errorMessage: $viewModel.errorMessage)
+//            .errorMessage(errorMessage: $viewModel.errorMessage)
         }
+    }
+    
+    private var moviesListGrid: some View {
+        ForEach(viewModel.movies) { movie in
+            NavigationLink(destination: movieDetail(id: movie.id) ) {
+                MovieCardView(movie: movie)
+//                    .shimmeringRedact(shouldRedact: viewModel.isShimmering)
+            }
+        }
+    }
+    
+    private func movieDetail(id: Int) -> some View {
+        MovieDetailsView(
+            viewModel: MovieDetailsViewModel(
+                movieId: id,
+                useCase: MovieDetailsUseCase(repository: MovieRepository(networkService: NetworkService(),
+                                                                         moviesDataManager: DataController.shared,
+                                                                         reachabilityManager: ReachabilityManager()))
+            )
+        )
     }
     
 }

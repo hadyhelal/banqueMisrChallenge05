@@ -17,8 +17,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B69B483A2D4CC8F40077F696 /* banqueMisr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = banqueMisr.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B69B484A2D4CC8F80077F696 /* banqueMisrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = banqueMisrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69B483A2D4CC8F40077F696 /* Moviz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moviz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69B484A2D4CC8F80077F696 /* MovizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -64,8 +64,8 @@
 		B69B483B2D4CC8F40077F696 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B69B483A2D4CC8F40077F696 /* banqueMisr.app */,
-				B69B484A2D4CC8F80077F696 /* banqueMisrTests.xctest */,
+				B69B483A2D4CC8F40077F696 /* Moviz.app */,
+				B69B484A2D4CC8F80077F696 /* MovizTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B69B48392D4CC8F40077F696 /* banqueMisr */ = {
+		B69B48392D4CC8F40077F696 /* Moviz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B69B485E2D4CC8F80077F696 /* Build configuration list for PBXNativeTarget "banqueMisr" */;
+			buildConfigurationList = B69B485E2D4CC8F80077F696 /* Build configuration list for PBXNativeTarget "Moviz" */;
 			buildPhases = (
 				B69B48362D4CC8F40077F696 /* Sources */,
 				B69B48372D4CC8F40077F696 /* Frameworks */,
@@ -88,16 +88,16 @@
 			fileSystemSynchronizedGroups = (
 				B69B483C2D4CC8F40077F696 /* banqueMisr */,
 			);
-			name = banqueMisr;
+			name = Moviz;
 			packageProductDependencies = (
 			);
 			productName = banqueMisr;
-			productReference = B69B483A2D4CC8F40077F696 /* banqueMisr.app */;
+			productReference = B69B483A2D4CC8F40077F696 /* Moviz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B69B48492D4CC8F80077F696 /* banqueMisrTests */ = {
+		B69B48492D4CC8F80077F696 /* MovizTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B69B48612D4CC8F80077F696 /* Build configuration list for PBXNativeTarget "banqueMisrTests" */;
+			buildConfigurationList = B69B48612D4CC8F80077F696 /* Build configuration list for PBXNativeTarget "MovizTests" */;
 			buildPhases = (
 				B69B48462D4CC8F80077F696 /* Sources */,
 				B69B48472D4CC8F80077F696 /* Frameworks */,
@@ -111,11 +111,11 @@
 			fileSystemSynchronizedGroups = (
 				B69B484D2D4CC8F80077F696 /* banqueMisrTests */,
 			);
-			name = banqueMisrTests;
+			name = MovizTests;
 			packageProductDependencies = (
 			);
 			productName = banqueMisrTests;
-			productReference = B69B484A2D4CC8F80077F696 /* banqueMisrTests.xctest */;
+			productReference = B69B484A2D4CC8F80077F696 /* MovizTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B69B48352D4CC8F30077F696 /* Build configuration list for PBXProject "banqueMisr" */;
+			buildConfigurationList = B69B48352D4CC8F30077F696 /* Build configuration list for PBXProject "Moviz" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -151,8 +151,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B69B48392D4CC8F40077F696 /* banqueMisr */,
-				B69B48492D4CC8F80077F696 /* banqueMisrTests */,
+				B69B48392D4CC8F40077F696 /* Moviz */,
+				B69B48492D4CC8F80077F696 /* MovizTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,7 +194,7 @@
 /* Begin PBXTargetDependency section */
 		B69B484C2D4CC8F80077F696 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B69B48392D4CC8F40077F696 /* banqueMisr */;
+			target = B69B48392D4CC8F40077F696 /* Moviz */;
 			targetProxy = B69B484B2D4CC8F80077F696 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -327,9 +327,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"banqueMisr/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = D5R69Q32RG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Moviz;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,7 +343,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = banquemisr.challenge05.banqueMisr;
+				PRODUCT_BUNDLE_IDENTIFIER = Moviz.challenge05.hadyhelal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -358,9 +359,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"banqueMisr/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = D5R69Q32RG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Moviz;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -373,7 +375,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = banquemisr.challenge05.banqueMisr;
+				PRODUCT_BUNDLE_IDENTIFIER = Moviz.challenge05.hadyhelal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -395,7 +397,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/banqueMisr.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/banqueMisr";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moviz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Moviz";
 			};
 			name = Debug;
 		};
@@ -413,14 +415,14 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/banqueMisr.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/banqueMisr";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moviz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Moviz";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B69B48352D4CC8F30077F696 /* Build configuration list for PBXProject "banqueMisr" */ = {
+		B69B48352D4CC8F30077F696 /* Build configuration list for PBXProject "Moviz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B69B485C2D4CC8F80077F696 /* Debug */,
@@ -429,7 +431,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B69B485E2D4CC8F80077F696 /* Build configuration list for PBXNativeTarget "banqueMisr" */ = {
+		B69B485E2D4CC8F80077F696 /* Build configuration list for PBXNativeTarget "Moviz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B69B485F2D4CC8F80077F696 /* Debug */,
@@ -438,7 +440,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B69B48612D4CC8F80077F696 /* Build configuration list for PBXNativeTarget "banqueMisrTests" */ = {
+		B69B48612D4CC8F80077F696 /* Build configuration list for PBXNativeTarget "MovizTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B69B48622D4CC8F80077F696 /* Debug */,

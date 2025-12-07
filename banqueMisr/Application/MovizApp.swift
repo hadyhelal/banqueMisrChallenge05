@@ -1,6 +1,6 @@
 //
-//  banqueMisrApp.swift
-//  banqueMisr
+//  MovizApp.swift
+//  MovizApp
 //
 //  Created by Hady Helal on 31/01/2025.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct banqueMisrApp: App {
+struct MovizApp: App {
     
     @StateObject private var appRootManager = RootViewManager()
 
@@ -17,7 +17,8 @@ struct banqueMisrApp: App {
             Group {
                 switch appRootManager.currentRoot {
                 case .splash:
-                    SplashView(viewModel: SplashViewModel(useCase: SplashConifgurationsUseCase(
+                    SplashView(
+                        viewModel: SplashViewModel(useCase: SplashConifgurationsUseCase(
                         repository: ConfigurationsRepository(networkService: NetworkService(),
                                                              reachabilityManager: ReachabilityManager()))))
                 case .home:
